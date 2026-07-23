@@ -1,4 +1,4 @@
-# \U0001F4D6 Dashboard Analitik Hafalan Al-Quran Santri
+# 📖 Dashboard Analitik Hafalan Al-Quran Santri
 
 Dashboard analitik pembelajaran (learning analytics) untuk melacak progress hafalan
 Al-Quran santri di pesantren/dayah — dilengkapi fitur **scan QR code** kartu santri
@@ -7,7 +7,7 @@ agar pengajar (musyrif) bisa langsung mencatat setoran murajaah/ziyadah dari HP/
 > Project portofolio pribadi. Data yang digunakan adalah **data dummy** yang meniru
 > struktur pencatatan hafalan pesantren pada umumnya.
 
-## \u2728 Fitur
+## ✨ Fitur
 
 - **Ringkasan Pesantren** — total progress, perbandingan antar halaqah, distribusi kualitas
   setoran, heatmap aktivitas harian
@@ -17,7 +17,7 @@ agar pengajar (musyrif) bisa langsung mencatat setoran murajaah/ziyadah dari HP/
   jenis setoran (ziyadah/murajaah), surah, jumlah ayat, dan kualitas bacaan
 - **Generator Kartu Santri** — membuat kartu santri berisi QR code unik per santri, siap cetak
 
-## \U0001F5BC\uFE0F Preview
+## 🖼️ Preview
 
 | Ringkasan Pesantren | Kartu Santri (QR) |
 |---|---|
@@ -25,13 +25,13 @@ agar pengajar (musyrif) bisa langsung mencatat setoran murajaah/ziyadah dari HP/
 
 *(tambahkan screenshot dashboard kamu di sini setelah dijalankan)*
 
-## \U0001F3D7\uFE0F Struktur Data
+## 🏗️ Struktur Data
 
 - **Santri** — identitas, halaqah, musyrif pembimbing, target khatam
 - **Setoran** — riwayat harian: jenis (*ziyadah*/*murajaah*), surah, jumlah ayat, kualitas bacaan
 - **Referensi Al-Quran** — 114 surah, 30 juz, 6.236 ayat (`data/quran_reference.py`)
 
-## \U0001F680 Cara Menjalankan
+## 🚀 Cara Menjalankan
 
 ```bash
 # 1. Clone & masuk folder
@@ -57,7 +57,7 @@ Dashboard akan terbuka di `http://localhost:8501`.
 > `pyzbar` untuk decode. Di Linux, `pyzbar` butuh library sistem `libzbar0`
 > (`sudo apt install libzbar0` jika belum ada).
 
-## \U0001F4C1 Struktur Project
+## 📁 Struktur Project
 
 ```
 hafalan-dashboard/
@@ -76,7 +76,7 @@ hafalan-dashboard/
 └── README.md
 ```
 
-## \U0001F6E0\uFE0F Tech Stack
+## 🛠️ Tech Stack
 
 - **Python** — Pandas untuk pengolahan data
 - **Streamlit** — dashboard interaktif
@@ -84,7 +84,7 @@ hafalan-dashboard/
 - **qrcode + Pillow** — generate kartu santri & QR code
 - **pyzbar** — decode QR dari kamera
 
-## \U0001F4A1 Pengembangan Selanjutnya
+## 💡 Pengembangan Selanjutnya
 
 - Autentikasi login untuk musyrif
 - Ekspor laporan progress ke PDF/Excel per santri
