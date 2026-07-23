@@ -142,6 +142,10 @@ elif page == "Input Setoran (Scan QR)":
     if "scanned_id" not in st.session_state:
         st.session_state.scanned_id = None
 
+    if st.session_state.get("flash_message"):
+        st.toast(st.session_state.flash_message, icon="\u2705")
+        st.session_state.flash_message = None
+
     tab_camera, tab_manual = st.tabs(["\U0001F4F7 Scan Kamera", "\u270D\uFE0F Pilih Manual"])
 
     with tab_camera:
@@ -185,8 +189,17 @@ elif page == "Input Setoran (Scan QR)":
 
             if submitted:
                 catat_setoran(santri_id, jenis, surah, jumlah_ayat, kualitas, musyrif)
-                st.success(f"Setoran {jenis} untuk {info['nama']} berhasil dicatat!")
+                st.session_state.flash_message = f"Setoran {jenis} untuk {info['nama']} berhasil dicatat!"
                 st.session_state.scanned_id = None
                 st.rerun()
     else:
         st.info("Scan QR kartu santri atau pilih manual di atas untuk mulai input setoran.")
+
+    st.divider()
+    st.subheader("Verifikasi: 5 Setoran Terakhir Tercatat")
+    _, setoran_terbaru = load_all()
+    st.dataframe(
+        setoran_terbaru.sort_values("tanggal", ascending=False).head(5)
+        [["tanggal", "santri_id", "jenis", "surah", "jumlah_ayat", "kualitas"]],
+        use_container_width=True, hide_index=True,
+    )
