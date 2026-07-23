@@ -1,0 +1,6 @@
+pandas>=2.0
+streamlit>=1.60
+plotly>=6.0
+qrcode[pil]>=8.0
+pyzbar>=0.1.9
+Pillow>=10.0
