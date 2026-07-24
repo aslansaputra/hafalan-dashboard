@@ -92,4 +92,4 @@ hafalan-dashboard/
 - Prediksi risiko keterlambatan khatam pakai regresi sederhana
 
 ---
-Dibuat sebagai project portofolio — data dummy, bukan data santri sungguhan.
+Data yang digunakan hanyalah data dummy, pengguna dapat menggunakan data yang relevan untuk menggunakan fiturnya dengan optimal.
