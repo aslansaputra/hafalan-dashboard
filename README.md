@@ -91,5 +91,7 @@ hafalan-dashboard/
 - Notifikasi santri yang tidak setor > N hari
 - Prediksi risiko keterlambatan khatam pakai regresi sederhana
 
+Untuk sistem ini masih dalam tahap pengembangan dan masih dalam kebutuhan riset. Jika ada yang berminat untuk berkolaborasi pengembangan sistem ini silakan pelajari dan pull request.
+
 ---
 Data yang digunakan hanyalah data dummy, pengguna dapat menggunakan data yang relevan untuk menggunakan fiturnya dengan optimal.
