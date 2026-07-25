@@ -55,9 +55,9 @@ def make_kartu_santri(santri: dict) -> Image.Image:
 
     draw.text((20, 90), f"Nama", font=font_body, fill="black")
     draw.text((20, 115), santri["nama"], font=font_title, fill="black")
-    draw.text((20, 170), f"ID Santri : {santri['santri_id']}", font=font_body, fill="black")
-    draw.text((20, 200), f"Halaqah   : {santri['halaqah']}", font=font_body, fill="black")
-    draw.text((20, 230), f"Musyrif   : {santri['musyrif']}", font=font_body, fill="black")
+    draw.text((20, 170), f"ID Santri: {santri['santri_id']}", font=font_body, fill="black")
+    draw.text((20, 200), f"Halaqah  : {santri['halaqah']}", font=font_body, fill="black")
+    draw.text((20, 230), f"Musyrif  : {santri['musyrif']}", font=font_body, fill="black")
     draw.text((20, 260), f"Target khatam: {santri['target_khatam_bulan']} bulan", font=font_body, fill="black")
     draw.text((20, CARD_H - 40), "Scan QR ini saat setoran murajaah/ziyadah", font=font_body, fill="#555555")
 
